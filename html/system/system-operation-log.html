@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=1024, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>ErrorLog Mgmt</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot.css"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-01.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-02.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-03.css"/>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var CONTEXT_PATH = "";
+        var SCRIPT_SESSION = (function(json){return json;})({"userCd":"system","userNm":"시스템 관리자","locale":"ko_KR","timeZone":"Asia/Seoul","dateFormat":"YYYY-MM-DD","login":true,"details":{"language":"en"},"dateTimeFormat":"YYYY-MM-DD HH:mm:ss","timeFormat":"HH:mm:ss"});
+    </script>
+    <script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="/assets/js/axboot/dist/axboot.js"></script>
+    <script type="text/javascript" src="/axboot.config.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/prettify/skins/github.css"/>
+    <script src="/assets/plugins/prettify/prettify.js"></script>
+    <script src="/assets/plugins/prettify/lang-css.js"></script>
+
+
+</head>
+<body class="ax-body ${axbody_class}" data-page-auto-height="true">
+<div id="ax-base-root" data-root-container="true">
+    <div class="ax-base-title" role="page-title">
+        <h1 class="title"><i class="cqc-browser"></i> ErrorLog Mgmt	</h1>
+        <p class="desc"></p>
+    </div>
+    <div class="ax-base-content">
+        <div data-page-buttons="">
+            <div class="button-warp">
+                <button type="button" class="btn btn-info" data-page-btn="search"><i class="axi axi-ion-android-search"></i> Inquery </button>
+            </div>
+        </div>
+
+        <div data-ax5layout="ax1" role="page-content" data-config='{layout:"split-panel", orientation: "horizontal", splitter: {size: 7}}' style="">
+            <div data-split-panel='{height: "*"}' id="" style="padding-bottom: 5px;" class="">
+                <div style="padding-bottom: 5px;" class="" data-split-panel-wrap="">
+                    <div class="ax-button-group" data-fit-height-aside="grid-view-01">
+                        <div data-ax-tbl="" id="" class="ax-search-box" style="width:300px;margin-bottom: 7px;">
+                            <form name="searchView0" id="searchView0" method="post" onsubmit="return false" style="">
+                                <div class="input-group">
+                                    <input type="text" id="filter" name="filter" class="form-control form-control" placeholder="Search.." />
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary">Search</button>
+                                </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="right">
+                            <button type="button" class="btn btn-default" data-grid-view-01-btn="remove"><i class="cqc-circle-with-minus"></i> Delete</button>
+                            <button type="button" class="btn btn-default" data-grid-view-01-btn="removeAll"><i class="cqc-circle-with-minus"></i> Delete All</button>
+                        </div>
+                    </div>
+                    <div data-ax5grid="grid-view-01" data-fit-height-content="grid-view-01" style="height: 300px;"></div>
+                </div>
+            </div>
+            <div data-splitter='{}'></div>
+            <div data-split-panel='{height: "*"}' id="" style="padding-top: 10px;" class="">
+                <div style="padding-top: 10px;" class="" data-split-panel-wrap="scroll">
+                    <form name="formView01" id="formView01" method="post" onsubmit="return false" style="">
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h2><i class="cqc-classic-computer"></i> Stack Trace</h2>
+                            </div>
+                        </div>
+                        <div class="form-control for-prettify" style="height:auto;padding: 0;" data-ax-path="trace"></div>
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h3><i class="cqc-info-with-circle"></i> Error Message</h3>
+                            </div>
+                        </div>
+                        <pre class="form-control for-prettify" style="height:auto;padding: 0;" data-ax-path="message"></pre>
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h3><i class="cqc-info-with-circle"></i> Request Parameter Information</h3>
+                            </div>
+                        </div>
+                        <pre class="form-control for-prettify" style="height:auto;padding: 0;" data-ax-path="parameterMap"></pre>
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h2><i class="cqc-info-with-circle"></i> Request Header Information</h2>
+                            </div>
+                            <div class="right">
+                                <!--<button type="button" class="AXButton" id="ax-form-btn-new"><i class="axi axi-plus-circle"></i> 신규</button>-->
+                            </div>
+                        </div>
+                        <pre class="form-control for-prettify" style="height:auto;padding: 0;" data-ax-path="headerMap"></pre>
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h2><i class="cqc-info-with-circle"></i> Request User Information</h2>
+                            </div>
+                        </div>
+                        <pre class="form-control for-prettify" style="height:auto;padding: 0;" data-ax-path="userInfo"></pre>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="/html/js/window_instance.js"></script>
+<script type="text/javascript" src="/assets/js/axboot/system/system-operation-log.js"></script>
+
+</body>
+</html>

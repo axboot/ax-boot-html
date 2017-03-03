@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=1024, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>User Mgmt</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot.css"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-01.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-02.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-03.css"/>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var CONTEXT_PATH = "";
+        var SCRIPT_SESSION = (function(json){return json;})({"userCd":"system","userNm":"시스템 관리자","locale":"ko_KR","timeZone":"Asia/Seoul","dateFormat":"YYYY-MM-DD","login":true,"details":{"language":"en"},"dateTimeFormat":"YYYY-MM-DD HH:mm:ss","timeFormat":"HH:mm:ss"});
+    </script>
+    <script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="/assets/js/axboot/dist/axboot.js"></script>
+    <script type="text/javascript" src="/axboot.config.js"></script>
+
+
+</head>
+<body class="ax-body ${axbody_class}" data-page-auto-height="true">
+<div id="ax-base-root" data-root-container="true">
+    <div class="ax-base-title" role="page-title">
+        <h1 class="title"><i class="cqc-browser"></i> User Mgmt</h1>
+        <p class="desc"></p>
+    </div>
+    <div class="ax-base-content">
+
+        <div data-page-buttons="">
+            <div class="button-warp">
+                <button type="button" class="btn btn-info" data-page-btn="search"><i class="axi axi-ion-android-search"></i> Inquery </button>
+                <button type="button" class="btn btn-info" data-page-btn="save"><i class="axi axi-save"></i> Save</button>
+            </div>
+        </div>
+        <!-- 검색바 -->
+        <div role="page-header">
+            <form name="searchView0" id="searchView0" method="post" onsubmit="return false" style="">
+                <div data-ax-tbl="" id="" class="ax-search-tbl" style="">
+                    <div data-ax-tr="" id="" class="" style="">
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Search</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" name="filter" id="filter" class="form-control" value="" placeholder="Search.." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="H10"></div>
+        </div>
+
+        <div data-ax5layout="ax1" role="page-content" data-config='{layout:"split-panel", orientation: "vertical", splitter: {size: 7}}' style="">
+            <div data-split-panel='{width: "40%"}' id="">
+                <div style="padding-right: 10px;" class="" data-split-panel-wrap="">
+                    <!-- 목록 -->
+                    <div class="ax-button-group" data-fit-height-aside="grid-view-01">
+                        <div class="left">
+                            <h2><i class="cqc-list"></i>
+                                User List
+                            </h2>
+                        </div>
+                        <div class="right"></div>
+                    </div>
+                    <div data-ax5grid="grid-view-01" data-fit-height-content="grid-view-01" style="height: 300px;"></div>
+                </div>
+            </div>
+            <div data-splitter='{}'></div>
+            <div data-split-panel='{width: "*"}' id="">
+                <div style="padding-left: 10px;" class="" data-split-panel-wrap="scroll">
+                    <!-- 폼 -->
+                    <div class="ax-button-group" role="panel-header">
+                        <div class="left">
+                            <h2><i class="cqc-news"></i>
+                                User Information
+                            </h2>
+                        </div>
+                        <div class="right">
+                            <button type="button" class="btn btn-default" data-form-view-01-btn="form-clear">
+                                <i class="cqc-erase"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    <form name="formView01" id="formView01" method="post" onsubmit="return false" style="">
+                        <input type="hidden" name="act_tp" id="act_tp" value="" />
+                        <div data-ax-tbl="" id="" class="ax-form-tbl" style="">
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:300px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">User Name</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="text" name="userNm" data-ax-path="userNm" maxlength="15" title="이름" class="av-required form-control W120" value="" />
+                                    </div>
+                                </div>
+                                <div data-ax-td="" id="" class="" style=";width:220px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">ID</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="text" name="userCd" data-ax-path="userCd" maxlength="100" title="아이디" class="av-required form-control W150" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:300px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Password</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="password" name="userPs" data-ax-path="userPs" maxlength="128" class="form-control W120" value="" readonly="readonly" />
+                                    </div>
+                                </div>
+                                <div data-ax-td="" id="" class="" style=";width:460px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Password Confirm</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="password" name="userPs_chk" data-ax-path="userPs_chk" maxlength="128" class="form-control inline-block W120" value="" readonly="readonly" /> &nbsp;
+                                        <label>
+                                            <input type="checkbox" data-ax-path="password_change" name="password_change" value="Y" /> Change Password
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:300px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">E-Mail</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="text" name="email" data-ax-path="email" maxlength="50" title="이메일" placeholder="abc@abc.com" class="av-email form-control" value="" />
+                                    </div>
+                                </div>
+                                <div data-ax-td="" id="" class="" style=";width:220px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Mobile</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="text" name="hpNo" data-ax-path="hpNo" maxlength="15" placeholder="" class="av-phone form-control W120" data-ax5formatter="phone" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:300px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Language</div>
+                                    <div data-ax-td-wrap="">
+                                        <select class="form-control form-control W100 " data-ax-path="locale">
+                                            <option value="ko_KR">대한민국</option>
+                                            <option value="en_US">미국</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:300px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Use or not</div>
+                                    <div data-ax-td-wrap="">
+                                        <select class="form-control form-control W100 " data-ax-path="useYn">
+                                            <option value="Y">사용</option>
+                                            <option value="N">사용안함</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div data-ax-td="" id="" class="" style=";width:220px">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Account Status</div>
+                                    <div data-ax-td-wrap="">
+                                        <select class="form-control null " data-ax-path="userStatus">
+                                            <option value="NORMAL">활성</option>
+                                            <option value="ACCOUNT_LOCK">잠김</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:100%">
+                                    <div data-ax-td-label="" class="" style=";width:120px">Remark</div>
+                                    <div data-ax-td-wrap="">
+                                        <input type="text" name="remark" data-ax-path="remark" maxlength="100" class="form-control" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="H5"></div>
+                        <div class="ax-button-group sm">
+                            <div class="left">
+                                <h3>Menu Group Setting</h3>
+                            </div>
+                        </div>
+                        <div data-ax-tbl="" id="" class="ax-form-tbl" style="">
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:250px">
+                                    <div data-ax-td-label="" class="" style="">Menu Group</div>
+                                    <div data-ax-td-wrap="">
+                                        <select class="form-control null " data-ax-path="menuGrpCd">
+                                            <option value="SYSTEM_MANAGER">시스템 관리자 그룹</option>
+                                            <option value="USER">사용자 그룹</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="H5"></div>
+                        <div class="ax-button-group sm">
+                            <div class="left">
+                                <h3>Authentication Group Setting</h3>
+                            </div>
+                        </div>
+                        <div data-ax-tbl="" id="" class="ax-form-tbl" style="">
+                            <div data-ax-tr="" id="" class="" style="">
+                                <div data-ax-td="" id="" class="" style=";width:100%">
+                                    <div data-ax-td-label="" class="" style="">Auth Group</div>
+                                    <div data-ax-td-wrap="">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="grpAuthCd" data-ax-path="grpAuthCd" value="S0001"> 시스템관리자 그룹 </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="grpAuthCd" data-ax-path="grpAuthCd" value="S0002"> 사용자 권한그룹 </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="H5"></div>
+                        <div class="ax-button-group sm">
+                            <div class="left">
+                                <h3>Role Setting</h3>
+                            </div>
+                        </div>
+                        <div data-ax5grid="grid-view-02" style="height: 300px;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="/html/js/window_instance.js"></script>
+<script type="text/javascript" src="/assets/js/axboot/system/system-auth-user.js"></script>
+
+</body>
+</html>

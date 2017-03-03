@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=1024, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Menu Mgmt</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot.css"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-01.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-02.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-03.css"/>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var CONTEXT_PATH = "";
+        var SCRIPT_SESSION = (function(json){return json;})({"userCd":"system","userNm":"시스템 관리자","locale":"ko_KR","timeZone":"Asia/Seoul","dateFormat":"YYYY-MM-DD","login":true,"details":{"language":"en"},"dateTimeFormat":"YYYY-MM-DD HH:mm:ss","timeFormat":"HH:mm:ss"});
+    </script>
+    <script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="/assets/js/axboot/dist/axboot.js"></script>
+    <script type="text/javascript" src="/axboot.config.js"></script>
+
+
+</head>
+<body class="ax-body ${axbody_class}" data-page-auto-height="true">
+<div id="ax-base-root" data-root-container="true">
+    <div class="ax-base-title" role="page-title">
+        <h1 class="title"><i class="cqc-browser"></i> Menu Mgmt</h1>
+        <p class="desc"></p>
+    </div>
+    <div class="ax-base-content">
+
+
+        <div data-page-buttons="">
+            <div class="button-warp">
+                <button type="button" class="btn btn-info" data-page-btn="search"><i class="axi axi-ion-android-search"></i> Inquery </button>
+                <button type="button" class="btn btn-info" data-page-btn="save"><i class="axi axi-save"></i> Save</button>
+            </div>
+        </div>
+        <div role="page-header">
+            <form name="searchView0" id="searchView0" method="post" onsubmit="return false" style="">
+                <div data-ax-tbl="" id="" class="ax-search-tbl" style="">
+                    <div data-ax-tr="" id="" class="" style="">
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Menu Group</div>
+                            <div data-ax-td-wrap="">
+                                <select class="form-control null " id="menuGrpCd">
+                                    <option value="SYSTEM_MANAGER">시스템 관리자 그룹</option>
+                                    <option value="USER">사용자 그룹</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="H10"></div>
+        </div>
+
+
+
+        <div data-ax5layout="ax1" role="page-content" data-config='{layout:"split-panel", orientation: "vertical", splitter: {size: 7}}' style="">
+            <div data-split-panel='{width: "300"}' id="">
+                <div style="padding-right: 10px;" class="" data-split-panel-wrap="">
+                    <div class="ax-button-group" data-fit-height-aside="tree-view-01">
+                        <div class="left">
+                            <h2>
+                                <i class="cqc-list"></i>
+                                Menu List </h2>
+                        </div>
+                        <div class="right">
+                            <button type="button" class="btn btn-default" data-tree-view-01-btn="add"><i class="cqc-circle-with-plus"></i> Add</button>
+                        </div>
+                    </div>
+                    <div data-z-tree="tree-view-01" data-fit-height-content="tree-view-01" style="height: 300px;" class="ztree"></div>
+                </div>
+            </div>
+            <div data-splitter='{}'></div>
+            <div data-split-panel='{width: "*"}' id="split-panel-form">
+                <div style="padding-left: 10px;" class="" data-split-panel-wrap="">
+                    <div data-fit-height-aside="form-view-01">
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h2>
+                                    <i class="cqc-news"></i>
+                                    Program Setting </h2>
+                            </div>
+                            <div class="right">
+                            </div>
+                        </div>
+                        <form name="formView01" id="formView01" method="post" onsubmit="return false" style="">
+                            <div data-ax-tbl="" id="" class="ax-form-tbl" style="">
+                                <div data-ax-tr="" id="" class="" style="">
+                                    <div data-ax-td="" id="" class="" style=";width:100%">
+                                        <div data-ax-td-label="" class="" style=";width:150px">Program Code</div>
+                                        <div data-ax-td-wrap="">
+                                            <input type="text" data-ax-path="progCd" class="form-control" value="" readonly="readonly" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-ax-tr="" id="" class="" style="">
+                                    <div data-ax-td="" id="" class="" style=";width:100%">
+                                        <div data-ax-td-label="" class="" style=";width:150px">Multi language</div>
+                                        <div data-ax-td-wrap="">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label>한국어</label>
+                                                    <input type="text" data-ax-path="multiLanguageJson.ko" class="form-control " />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>English</label>
+                                                    <input type="text" data-ax-path="multiLanguageJson.en" class="form-control " />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-ax-tr="" id="" class="" style="">
+                                    <div data-ax-td="" id="" class="" style=";width:100%">
+                                        <div data-ax-td-label="" class="" style=";width:150px">Program Name</div>
+                                        <div data-ax-td-wrap="">
+                                            <input type="hidden" data-ax-path="menuId" class="form-control" value="" />
+                                            <input type="hidden" data-ax-path="progNm" class="form-control" value="" />
+                                            <div class="form-group">
+                                                <div data-ax5combobox="progCd" data-ax5combobox-config='{size: "", editable: false, multiple: false}'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="H20"></div>
+                        <!-- 목록 -->
+                        <div class="ax-button-group">
+                            <div class="left">
+                                <h2><i class="cqc-list"></i> Authentication Group Setting </h2>
+                            </div>
+                            <div class="right">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-ax5grid="grid-view-01" data-fit-height-content="form-view-01" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<script type="text/javascript" src="/html/js/window_instance.js"></script>
+<script type="text/javascript" src="/assets/js/axboot/system/system-config-menu.js"></script>
+
+</body>
+</html>
