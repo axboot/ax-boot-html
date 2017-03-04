@@ -4,7 +4,8 @@ var ACTIONS = axboot.actionExtend(fnObj, {
         var searchData = caller.searchView.getData();
         axboot.ajax({
             type: "GET",
-            url: ["menu"],
+            //url: ["menu"],
+            url: "/html/json/menuMgmt.json",
             data: caller.searchView.getData(),
             callback: function (res) {
                 caller.treeView01.setData(searchData, res.list, data);
@@ -202,7 +203,10 @@ fnObj.pageStart = function () {
 
     axboot
         .call({
-            type: "GET", url: "/api/v1/programs", data: "",
+            type: "GET",
+            //url: "/api/v1/programs",
+            url: "/html/json/api_programs.json",
+            data: "",
             callback: function (res) {
                 var programList = [];
                 res.list.forEach(function (n) {
@@ -216,7 +220,10 @@ fnObj.pageStart = function () {
             }
         })
         .call({
-            type: "GET", url: "/api/v1/commonCodes", data: {groupCd: "AUTH_GROUP", useYn: "Y"},
+            type: "GET",
+            //url: "/api/v1/commonCodes",
+            url: "/html/json/commonCodes_menu.json",
+            data: {groupCd: "AUTH_GROUP", useYn: "Y"},
             callback: function (res) {
                 var authGroup = [];
                 res.list.forEach(function (n) {

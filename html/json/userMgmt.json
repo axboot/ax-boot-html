@@ -1,0 +1,29 @@
+{
+  "page": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "currentPage": 0,
+    "pageSize": 0
+  },
+  "list": [
+    {
+      "userCd": "system",
+      "createdAt": "2017-02-26T14:31:40.799Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:40.799Z",
+      "updatedBy": "system",
+      "userNm": "시스템 관리자",
+      "userPs": "$2a$11$ruVkoieCPghNOA6mtKzWReZ5Ee66hbeqwvlBT1z.W4VMYckBld6uC",
+      "userStatus": "NORMAL",
+      "locale": "ko_KR",
+      "menuGrpCd": "SYSTEM_MANAGER",
+      "useYn": "Y",
+      "delYn": "N",
+      "id": "system",
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    }
+  ]
+}

@@ -1,21 +1,16 @@
 var fnObj = {};
 var ACTIONS = axboot.actionExtend(fnObj, {
     PAGE_SEARCH: function (caller, act, data) {
-/*
         axboot.ajax({
             type: "GET",
-            url: ["commonCodes"],
+            //url: ["commonCodes"],
+            url: "/html/json/commonCodeMgmt.json",
             data: caller.searchView.getData(),
             callback: function (res) {
                 caller.gridView01.setData(res);
             }
         });
         return false;
-*/
-        //temp data
-        $.getJSON( "/html/json/commonCodeMgmt.json", function( data ) {
-            caller.gridView01.setData(data);
-        });
     },
     PAGE_SAVE: function (caller, act, data) {
         var saveList = [].concat(caller.gridView01.getData("modified"));

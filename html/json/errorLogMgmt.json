@@ -1,0 +1,9 @@
+{
+  "page": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "currentPage": 0,
+    "pageSize": 20
+  },
+  "list": []
+}

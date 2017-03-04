@@ -1,0 +1,91 @@
+
+{
+  "page": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "currentPage": 0,
+    "pageSize": 0
+  },
+  "list": [
+    {
+      "createdAt": "2017-02-26T14:31:42.140Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:42.140Z",
+      "updatedBy": "system",
+      "groupCd": "USER_ROLE",
+      "groupNm": "사용자 롤",
+      "code": "ASP_ACCESS",
+      "name": "관리시스템 접근 롤",
+      "sort": 1,
+      "useYn": "Y",
+      "id": {
+        "groupCd": "USER_ROLE",
+        "code": "ASP_ACCESS"
+      },
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    },
+    {
+      "createdAt": "2017-02-26T14:31:42.369Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:42.369Z",
+      "updatedBy": "system",
+      "groupCd": "USER_ROLE",
+      "groupNm": "사용자 롤",
+      "code": "SYSTEM_MANAGER",
+      "name": "시스템 관리자 롤",
+      "sort": 2,
+      "useYn": "Y",
+      "id": {
+        "groupCd": "USER_ROLE",
+        "code": "SYSTEM_MANAGER"
+      },
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    },
+    {
+      "createdAt": "2017-02-26T14:31:42.147Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:42.147Z",
+      "updatedBy": "system",
+      "groupCd": "USER_ROLE",
+      "groupNm": "사용자 롤",
+      "code": "ASP_MANAGER",
+      "name": "일반괸리자 롤",
+      "sort": 3,
+      "useYn": "Y",
+      "id": {
+        "groupCd": "USER_ROLE",
+        "code": "ASP_MANAGER"
+      },
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    },
+    {
+      "createdAt": "2017-02-26T14:31:42.133Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:42.133Z",
+      "updatedBy": "system",
+      "groupCd": "USER_ROLE",
+      "groupNm": "사용자 롤",
+      "code": "API",
+      "name": "API 접근 롤",
+      "sort": 6,
+      "useYn": "Y",
+      "id": {
+        "groupCd": "USER_ROLE",
+        "code": "API"
+      },
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    }
+  ]
+}

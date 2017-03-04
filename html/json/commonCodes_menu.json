@@ -1,0 +1,50 @@
+{
+  "page": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "currentPage": 0,
+    "pageSize": 0
+  },
+  "list": [
+    {
+      "createdAt": "2017-02-26T14:31:42.285Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:42.285Z",
+      "updatedBy": "system",
+      "groupCd": "AUTH_GROUP",
+      "groupNm": "권한그룹",
+      "code": "S0001",
+      "name": "시스템관리자 그룹",
+      "sort": 1,
+      "useYn": "Y",
+      "id": {
+        "groupCd": "AUTH_GROUP",
+        "code": "S0001"
+      },
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    },
+    {
+      "createdAt": "2017-02-26T14:31:42.356Z",
+      "createdBy": "system",
+      "updatedAt": "2017-02-26T14:31:42.356Z",
+      "updatedBy": "system",
+      "groupCd": "AUTH_GROUP",
+      "groupNm": "권한그룹",
+      "code": "S0002",
+      "name": "사용자 권한그룹",
+      "sort": 2,
+      "useYn": "Y",
+      "id": {
+        "groupCd": "AUTH_GROUP",
+        "code": "S0002"
+      },
+      "dataStatus": "ORIGIN",
+      "__deleted__": false,
+      "__created__": false,
+      "__modified__": false
+    }
+  ]
+}
