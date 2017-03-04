@@ -1,6 +1,7 @@
 var fnObj = {};
 var ACTIONS = axboot.actionExtend(fnObj, {
     PAGE_SEARCH: function (caller, act, data) {
+        /*
         axboot.ajax({
             type: "GET",
             url: ["programs"],
@@ -9,8 +10,12 @@ var ACTIONS = axboot.actionExtend(fnObj, {
                 caller.gridView01.setData(res);
             }
         });
-
         return false;
+        */
+        //temp data
+        $.getJSON( "/html/json/programMgmt.json", function( data ) {
+            caller.gridView01.setData(data);
+        });
     },
     PAGE_SAVE: function (caller, act, data) {
         var saveList = [].concat(caller.gridView01.getData());
