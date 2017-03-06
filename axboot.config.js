@@ -21,14 +21,14 @@
                 width: 500,
                 height: 500,
                 iframe: {
-                    url: "/jsp/common/zipcode.jsp"
+                    url: "/html/common/zipcode.html"
                 }
             },
             "SAMPLE-MODAL": {
                 width: 500,
                 height: 500,
                 iframe: {
-                    url: "/jsp/_samples/modal.jsp"
+                    url: "/html/_samples/modal.html"
                 },
                 header: false
             },
@@ -36,7 +36,7 @@
                 width: 600,
                 height: 400,
                 iframe: {
-                    url: "/jsp/system/system-config-common-code-modal.jsp"
+                    url: "/html/system/system-config-common-code-modal.html"
                 },
                 header: false
             }

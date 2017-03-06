@@ -263,7 +263,7 @@
       "updatedBy": "system",
       "progCd": "main",
       "progNm": "메인",
-      "progPh": "/jsp/main.jsp",
+      "progPh": "/html/main.html",
       "target": "_self",
       "authCheck": "N",
       "schAh": "N",
