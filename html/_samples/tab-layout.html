@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Tab Layout</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot.css" />
+
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-01.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-02.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-03.css"/>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var CONTEXT_PATH = "";
+        var SCRIPT_SESSION = (function(json) {
+            return json;
+        })({
+            "userCd": "system",
+            "userNm": "시스템 관리자",
+            "locale": "ko_KR",
+            "timeZone": "Asia/Seoul",
+            "dateFormat": "YYYY-MM-DD",
+            "login": true,
+            "details": {
+                "language": "en"
+            },
+            "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
+            "timeFormat": "HH:mm:ss"
+        });
+    </script>
+    <script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="/assets/js/axboot/dist/axboot.js"></script>
+    <script type="text/javascript" src="/axboot.config.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/prettify/skins/github.css" />
+    <script src="/assets/plugins/prettify/prettify.js"></script>
+    <script src="/assets/plugins/prettify/lang-css.js"></script>
+</head>
+
+<body class="ax-body " data-page-auto-height="true">
+<div id="ax-base-root" data-root-container="true">
+    <div class="ax-base-title" role="page-title">
+        <h1 class="title"><i class="cqc-browser"></i> Tab Layout</h1>
+        <p class="desc"></p>
+    </div>
+    <div class="ax-base-content">
+        <div data-page-buttons="">
+            <div class="button-warp">
+            </div>
+        </div>
+        <div role="page-header">
+            <form name="searchView0" id="searchView0" method="post" onsubmit="return false" style="">
+                <div data-ax-tbl="" id="" class="ax-search-tbl" style="">
+                    <div data-ax-tr="" id="" class="" style="">
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition1</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition2</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition3</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="H10"></div>
+        </div>
+        <div data-ax5layout="ax1" role="page-content" data-config='{layout:"split-panel", orientation: "horizontal", splitter: {size: 7}}' style="">
+            <div data-split-panel='{height: "250"}' id="" style="padding-bottom: 10px;" class="">
+                <div style="padding-bottom: 10px;" class="" data-split-panel-wrap="">
+                    <div class="ax-button-group" data-fit-height-aside="left-view-01">
+                        <div class="left">
+                            <h2>
+                                <i class="cqc-list"></i>
+                                Top Panel </h2>
+                        </div>
+                        <div class="right">
+                            <button type="button" class="btn btn-default" data-left-view-01-btn="add"><i class="cqc-circle-with-plus"></i> Add</button>
+                        </div>
+                    </div>
+                    <div data-fit-height-content="left-view-01" style="height: 300px;border: 1px solid #D8D8D8;background: #fff;">
+                            <pre>
+&lt;div data-fit-height-aside="left-view-01">&lt;/div>
+&lt;div data-fit-height-content="left-view-01">&lt;/div>
+&lt;div data-fit-height-aside="left-view-01">&lt;/div>
+// [data-fit-height-aside] [data-dit-height-content] 는 속성의 같은 엘리먼트간에 유기적으로 작동합니다
+// 엘리먼트들이 속한 부모 엘리먼트의 높이에서. aside항목의 높이들은 뺀 나머지를 content항목으로 계산하여 style.height를 자동으로 결정합니다.
+// data-fit-height 속성은 ax5layout 안에 있는 항목에 대해서만 작동 하고 해당 기능의 이벤트는 axboot.init에서 초기화 되어 있습니다.
+</pre>
+                    </div>
+                    <div class="ax-button-group ax-button-group-bottom" data-fit-height-aside="left-view-01">
+                        <div class="left">
+                            <button type="button" class="btn btn-default" data-left-view-01-btn="add">Button FN0</button>
+                            <button type="button" class="btn btn-primary" data-left-view-01-btn="add">Button FN1</button>
+                            <button type="button" class="btn btn-info" data-left-view-01-btn="add">Button FN2</button>
+                            <button type="button" class="btn btn-success" data-left-view-01-btn="add">Button FN3</button>
+                            <button type="button" class="btn btn-warning" data-left-view-01-btn="add">Button FN3</button>
+                            <button type="button" class="btn btn-danger" data-left-view-01-btn="add">Button FN3</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-splitter='{}'></div>
+            <div data-split-panel='{height: "*"}' id="" style="padding-top: 10px;" class="">
+                <div style="padding-top: 10px;" class="" data-split-panel-wrap="">
+                    <div data-ax5layout="ax2" data-config='{layout:"tab-panel"}' data-fit-height-content="layout-view-01" style="height:100%;">
+                        <div data-tab-panel='{label: "Tab1", active: false}'>
+                            <div style="padding:10px 0 0 0;" data-split-panel-wrap="scroll">
+                                <p>
+                                    Tab1
+                                </p>
+                            </div>
+                        </div>
+                        <div data-tab-panel='{label: "Tab2", active: true}'>
+                            <div style="padding:10px 0 0 0;" data-split-panel-wrap="scroll">
+                                <div class="ax-button-group" data-fit-height-aside="right-view-01">
+                                    <div class="left">
+                                        <h2>
+                                            <i class="cqc-list"></i>
+                                            Tab Layout Code </h2>
+                                    </div>
+                                </div>
+                                <div data-fit-height-content="right-view-01" style="height: 300px;border: 1px solid #D8D8D8;background: #fff;">
+<pre>
+// 탭 레이아웃을 손쉽게 태그만으로 만들 수 있습니다.
+// ax:tab-layout 태그를 만드세요. name을 반드시 부모 layout과 다르게 설정해야 하는 것을 잊지 마세요.
+&lt;ax:tab-layout name="ax2" data_fit_height_content="layout-view-01" style="height:100%;">
+    &lt;ax:tab-panel label="기본정보" scroll="scroll">
+        &lt;p>
+            기본정보
+        &lt;/p>
+    &lt;/ax:tab-panel>
+    &lt;ax:tab-panel label="일반정보" scroll="scroll" active="true"> // active="true"인 패널이 활성화 패널이 됩니다.
+        &lt;p>
+            일반정보
+        &lt;/p>
+    &lt;/ax:tab-panel>
+    &lt;ax:tab-panel label="상세정보" scroll="scroll">
+        &lt;p>
+            상세정보
+        &lt;/p>
+    &lt;/ax:tab-panel>
+    &lt;ax:tab-panel label="기타정보" scroll="scroll">
+        &lt;p>
+            기타정보
+        &lt;/p>
+    &lt;/ax:tab-panel>
+    &lt;ax:tab-panel label="이력조회" scroll="scroll">
+        &lt;p>
+            이력조회
+        &lt;/p>
+    &lt;/ax:tab-panel>
+&lt;/ax:tab-layout>
+
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-panel='{label: "Tab3", active: false}'>
+                            <div style="padding:10px 0 0 0;" data-split-panel-wrap="scroll">
+                                <p>
+                                    Tab3
+                                </p>
+                            </div>
+                        </div>
+                        <div data-tab-panel='{label: "Tab4", active: false}'>
+                            <div style="padding:10px 0 0 0;" data-split-panel-wrap="scroll">
+                                <p>
+                                    Tab4
+                                </p>
+                            </div>
+                        </div>
+                        <div data-tab-panel='{label: "Tab5", active: false}'>
+                            <div style="padding:10px 0 0 0;" data-split-panel-wrap="scroll">
+                                <p>
+                                    Tab5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/js/view/_samples/page-structure.js"></script>
+</body>
+
+</html>
