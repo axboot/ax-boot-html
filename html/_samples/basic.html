@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Basic Template</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot.css" />
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-01.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-02.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/axboot-03.css"/>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var CONTEXT_PATH = "";
+        var SCRIPT_SESSION = (function(json) {
+            return json;
+        })({
+            "userCd": "system",
+            "userNm": "시스템 관리자",
+            "locale": "ko_KR",
+            "timeZone": "Asia/Seoul",
+            "dateFormat": "YYYY-MM-DD",
+            "login": true,
+            "details": {
+                "language": "en"
+            },
+            "dateTimeFormat": "YYYY-MM-DD HH:mm:ss",
+            "timeFormat": "HH:mm:ss"
+        });
+    </script>
+    <script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+    <script type="text/javascript" src="/assets/js/axboot/dist/axboot.js"></script>
+    <script type="text/javascript" src="/axboot.config.js"></script>
+
+</head>
+
+<body class="ax-body " data-page-auto-height="true">
+<div id="ax-base-root" data-root-container="true">
+    <div class="ax-base-title" role="page-title">
+        <h1 class="title"><i class="cqc-browser"></i> Basic Template</h1>
+        <p class="desc"></p>
+    </div>
+    <div class="ax-base-content">
+        <div data-page-buttons="">
+            <div class="button-warp">
+            </div>
+        </div>
+        <div role="page-header">
+            <form name="searchView0" id="searchView0" method="post" onsubmit="return false" style="">
+                <div data-ax-tbl="" id="" class="ax-search-tbl" style="">
+                    <div data-ax-tr="" id="" class="" style="">
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition1</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition2</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition3</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div data-ax-tr="" id="" class="" style="">
+                        <div data-ax-td="" id="" class="" style=";width:300px">
+                            <div data-ax-td-label="" class="" style="">Condition1</div>
+                            <div data-ax-td-wrap="">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="H10"></div>
+        </div>
+        <div data-ax5layout="ax1" role="page-content" data-config='{layout:"split-panel", orientation: "horizontal", splitter: {size: 7}}' style="">
+            <div data-split-panel='{height: ""}' id="" style="" class="">
+                <div style="" class="" data-split-panel-wrap="">
+                    <!-- 목록 -->
+                    <div class="ax-button-group" data-fit-height-aside="grid-view-01">
+                        <div class="left">
+                            <h2><i class="cqc-list"></i> Program Title </h2>
+                        </div>
+                        <div class="right">
+                            <button type="button" class="btn btn-default" data-grid-view-01-btn="add"><i class="cqc-circle-with-plus"></i> Add</button>
+                            <button type="button" class="btn btn-default" data-grid-view-01-btn="delete"><i class="cqc-circle-with-plus"></i> Delete</button>
+                        </div>
+                    </div>
+                    <div data-ax5grid="grid-view-01" data-fit-height-content="grid-view-01" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/html/js/window_instance.js"></script>
+<script type="text/javascript" src="/assets/js/view/_samples/basic.js"></script>
+</body>
+
+</html>
