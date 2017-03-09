@@ -2349,7 +2349,7 @@ axboot.addressPopup = {
             width: 500,
             height: 600,
             iframe: {
-                url: "/jsp/common/zipcode.jsp"
+                url: "/html/common/zipcode.html"
             },
             header: {
                 title: "우편번호 찾기"

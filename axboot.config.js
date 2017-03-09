@@ -21,14 +21,16 @@
                 width: 500,
                 height: 500,
                 iframe: {
-                    url: "/html/common/zipcode.html"
+                    url: "/html/common/zipcode.html",
+                    method:"GET"        //html 간 통신때문에 get 방식을 사용합니다.
                 }
             },
             "SAMPLE-MODAL": {
                 width: 500,
                 height: 500,
                 iframe: {
-                    url: "/html/_samples/modal.html"
+                    url: "/html/_samples/modal.html",
+                    method:"GET"        //html 간 통신때문에 get 방식을 사용합니다.
                 },
                 header: false
             },
@@ -36,7 +38,8 @@
                 width: 600,
                 height: 400,
                 iframe: {
-                    url: "/html/system/system-config-common-code-modal.html"
+                    url: "/html/system/system-config-common-code-modal.html",
+                    method:"GET"        //html 간 통신때문에 get 방식을 사용합니다.
                 },
                 header: false
             }
