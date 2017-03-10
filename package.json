@@ -4,7 +4,7 @@
   "description": "ax-boot-framework html",
   "main": "index.html",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
