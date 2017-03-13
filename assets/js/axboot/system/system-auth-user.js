@@ -4,7 +4,7 @@ var ACTIONS = axboot.actionExtend(fnObj, {
         axboot.ajax({
             type: "GET",
             //url: ["users"],
-            url: "/html/json/userMgmt.json",
+            url: ["testAPI_users"],
             data: caller.searchView.getData(),
             callback: function (res) {
                 caller.gridView01.setData(res);
@@ -88,7 +88,7 @@ fnObj.pageStart = function () {
         .call({
             type: "GET",
             //url: ["commonCodes"],
-            url: "/html/json/commonCodes_users.json",
+            url: ["testAPI_commonCodes_users"],
             data: {groupCd: "USER_ROLE", useYn: "Y"},
             callback: function (res) {
                 var userRole = [];

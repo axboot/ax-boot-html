@@ -2,7 +2,15 @@
     if (axboot && axboot.def) {
 
         axboot.def["DEFAULT_TAB_LIST"] = [
-            {menuId: "00-dashboard", id: "dashboard", progNm: '홈', menuNm: '홈', progPh: '/html/dashboard.html', url: '/html/dashboard.html?progCd=dashboard', status: "on", fixed: true}
+            {menuId   : "00-dashboard",
+                id    : "dashboard",
+                progNm: '홈',
+                menuNm: '홈',
+                progPh: '/html/dashboard.html',
+                url   : '/html/dashboard.html?progCd=dashboard',
+                status: "on",
+                fixed : true
+            }
         ];
 
         axboot.def["API"] = {
@@ -13,7 +21,21 @@
             "manual": "/api/v1/manual",
             "errorLogs": "/api/v1/errorLogs",
             "files": "/api/v1/files",
-            "samples": "/api/v1/samples"
+            "samples": "/api/v1/samples",
+
+            //test API
+            "testAPI_users": "/html/json/userMgmt.json",
+            "testAPI_commonCodes": "/html/json/commonCodeMgmt.json",
+            "testAPI_commonCodes_menu": "/html/json/commonCodes_menu.json",
+            "testAPI_commonCodes_users": "/html/json/commonCodes_users.json",
+            "testAPI_programs": "/html/json/programMgmt.json",
+            "testAPI_menu": "/html/json/menuMgmt.json",
+            "testAPI_errorLogs": "/html/json/errorLogMgmt.json"
+            /*
+            "testAPI_manual": "/api/v1/manual",
+            "testAPI_files": "/api/v1/files",
+            "testAPI_samples": "/api/v1/samples"
+            */
         };
 
         axboot.def["MODAL"] = {

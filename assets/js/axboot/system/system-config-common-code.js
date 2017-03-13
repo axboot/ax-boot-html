@@ -4,7 +4,7 @@ var ACTIONS = axboot.actionExtend(fnObj, {
         axboot.ajax({
             type: "GET",
             //url: ["commonCodes"],
-            url: "/html/json/commonCodeMgmt.json",
+            url: ["testAPI_commonCodes"],
             data: caller.searchView.getData(),
             callback: function (res) {
                 caller.gridView01.setData(res);

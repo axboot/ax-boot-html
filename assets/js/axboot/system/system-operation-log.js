@@ -4,7 +4,7 @@ var ACTIONS = axboot.actionExtend(fnObj, {
         axboot.ajax({
             type: "GET",
             //url: ["errorLogs"],
-            url: "/html/json/errorLogMgmt.json",
+            url: ["testAPI_errorLogs"],
             data: $.extend({}, this.searchView.getData(), this.gridView01.getPageData()),
             callback: function (res) {
                 caller.gridView01.setData(res);

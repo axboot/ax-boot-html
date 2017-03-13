@@ -110,7 +110,7 @@ fnObj.pageStart = function () {
         .call({
             type: "GET",
             //url: "/api/v1/commonCodes",
-            url: "/html/json/commonCodes_users.json",
+            url: ["testAPI_commonCodes_users"],
             data: {groupCd: "USER_ROLE", useYn: "Y"},
             callback: function (res) {
                 var userRole = [];

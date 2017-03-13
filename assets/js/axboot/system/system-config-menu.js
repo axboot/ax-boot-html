@@ -5,7 +5,7 @@ var ACTIONS = axboot.actionExtend(fnObj, {
         axboot.ajax({
             type: "GET",
             //url: ["menu"],
-            url: "/html/json/menuMgmt.json",
+            url: ["testAPI_menu"],
             data: caller.searchView.getData(),
             callback: function (res) {
                 caller.treeView01.setData(searchData, res.list, data);
@@ -222,7 +222,7 @@ fnObj.pageStart = function () {
         .call({
             type: "GET",
             //url: "/api/v1/commonCodes",
-            url: "/html/json/commonCodes_menu.json",
+            url: ["testAPI_commonCodes_menu"],
             data: {groupCd: "AUTH_GROUP", useYn: "Y"},
             callback: function (res) {
                 var authGroup = [];
