@@ -71,9 +71,7 @@ axboot.init = function () {
         if (typeof parent.COMMON_CODE === "undefined" && window.SCRIPT_SESSION && SCRIPT_SESSION.login) {
             // API : /api/v1/commonCodes/getAllByMap
             axboot.ajax({
-                //url: "/api/v1/commonCodes/getAllByMap",
-                url: "/html/json/api_getAllByMap.json",
-
+                url: "/api/v1/commonCodes/getAllByMap",
                 callback: function callback(res) {
                     parent.COMMON_CODE = axboot.convertCode(res);
                     axboot.pageStart();

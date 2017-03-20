@@ -24,9 +24,25 @@
     "babel-preset-stage-0": "^6.22.0",
     "copy-webpack-plugin": "^4.0.1",
     "express": "^4.15.2",
-    "html-webpack-plugin": "^2.28.0",
-    "raw-loader": "^0.5.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "node-sass": "*",
+    "markdown-it": "^8.1.0",
+    "strip-indent": "^2.0.0",
+    "fs-finder": "^1.8.1",
+
+    "gulp": "*",
+    "gulp-changed": "*",
+    "gulp-concat": "*",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "*",
+    "gulp-clean": "^0.3.2",
+    "gulp-plumber": "",
+    "gulp-notify": "",
+    "gulp-replace": "",
+    "js-beautify": "^1.5.10",
+    "babel-cli": "^6.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-sourcemaps": "",
+    "bower": "^1.8.0"
   }
 }
